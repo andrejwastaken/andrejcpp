@@ -1,39 +1,23 @@
 #include <iostream>
 #include <cstdlib>
+#include <iomanip>
+#include <string>
+#include <iso646.h>
 using namespace std;
 
 int main()
 {
-   int num1, num2;
-    char op;
-    string name;
-    cout << "Enter your name: " ;
-    cin >> name;
-    if(name == "Andrej"){
-            cout << "Access granted" << endl;
-    } else{
-    cout << "Access denied";
-    return;
-    }
-    cout << "Enter first number: " ;
-    cin >> num1;
-    cout << "Enter operator: " ;
-    cin >> op;
-    cout << "Enter second number: " ;
-    cin >> num2;
-    int result;
-    if(op == '+'){
-        result = num1 + num2;
-    }else if(op == '-'){
-        result = num1 - num2;
-    }else if(op == '/'){
-        result = num1 / num2;
-    }else if(op == '*'){
-        result = num1 * num2;
-    }else {
-       cout << "Invalid Operator" <<endl;
-    }
-cout << result <<endl;
-system("PAUSE");
+
+int n,i;
+i = 1;
+v:cout<<"Vnesete do koj broj sakate da brojam: ";
+cin>>n;
+if(n <= i){
+    goto v;
+}else
+for(i = 1; n >= i ; i++)
+    cout<<i<<endl;
+    system("PAUSE");
     return 0;
 }
+
