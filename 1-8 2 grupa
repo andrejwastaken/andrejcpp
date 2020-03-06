@@ -1,0 +1,23 @@
+#include <iostream>
+#include <cstdlib>
+#include <iomanip>
+#include <string>
+#include <iso646.h>
+using namespace std;
+int main()
+{
+int b,n,proizvod,s;
+b=0;
+proizvod = 0;
+cout<<"Vnesi do koj broj sakash: "<<endl;
+cin>>n;
+for(int i =1;i<=n;i++)
+if(i%5 == 0 && i>7){
+proizvod = i*i;
+b++;
+}
+cout<<"Proizvodot od " <<b<< " broevi koi se delivi so 5 i pogolemi od 7 e " <<proizvod<<endl;
+system("PAUSE");
+return 0;
+}
+
